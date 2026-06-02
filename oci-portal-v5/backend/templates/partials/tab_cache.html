@@ -7,58 +7,58 @@
 </div>
 
 <!-- Cache Grid with responsive layout -->
-<div class="cache-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px;margin-bottom:24px">
+<div class="cache-grid">
   
   <!-- DV920 - Development Environment -->
-  <div class="cache-card" style="background:var(--bg-2);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;transition:all 0.3s;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
-    <div class="cache-card-header" style="margin-bottom:12px">
-      <div class="cache-card-icon" style="font-size:28px;font-weight:700;color:#3b82f6;margin-bottom:8px;letter-spacing:1px">DV920</div>
-      <div class="cache-card-title" style="font-weight:600;margin-bottom:4px;font-size:15px">Development</div>
-      <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:0">Clear JDBJ & AIS caches</div>
+  <div class="cache-card">
+    <div class="cache-card-header">
+      <div class="cache-card-icon">DV920</div>
+      <div class="cache-card-title">Development</div>
+      <div class="cache-card-desc">Clear JDBJ & AIS caches</div>
     </div>
     
-    <button class="btn-cache" id="cache-btn-DV920" style="width:100%;background:#ef4444;color:white;padding:10px;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.3s;font-family:inherit" onclick="clearCache('DV920')" onmouseover="if(!this.disabled){this.style.background='#dc2626';this.style.boxShadow='0 4px 12px rgba(239,68,68,0.3)'}" onmouseout="if(!this.disabled){this.style.background='#ef4444';this.style.boxShadow='none'}">
-      <i class="ti ti-trash" style="font-size:16px"></i> Clear Cache
+    <button class="btn-cache" id="cache-btn-DV920" onclick="askClearCache('DV920')">
+      <i class="ti ti-trash"></i> Clear Cache
     </button>
     
-    <div class="cache-result" id="cache-result-DV920" style="margin-top:12px;min-height:20px"></div>
+    <div class="cache-result" id="cache-result-DV920"></div>
   </div>
 
   <!-- PY920 - Pre-Production Environment -->
-  <div class="cache-card" style="background:var(--bg-2);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;transition:all 0.3s;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
-    <div class="cache-card-header" style="margin-bottom:12px">
-      <div class="cache-card-icon" style="font-size:28px;font-weight:700;color:#f59e0b;margin-bottom:8px;letter-spacing:1px">PY920</div>
-      <div class="cache-card-title" style="font-weight:600;margin-bottom:4px;font-size:15px">Pre-Production</div>
-      <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:0">Clear JDBJ & AIS caches</div>
+  <div class="cache-card">
+    <div class="cache-card-header">
+      <div class="cache-card-icon" style="color:#f59e0b">PY920</div>
+      <div class="cache-card-title">Pre-Production</div>
+      <div class="cache-card-desc">Clear JDBJ & AIS caches</div>
     </div>
     
-    <button class="btn-cache" id="cache-btn-PY920" style="width:100%;background:#ef4444;color:white;padding:10px;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.3s;font-family:inherit" onclick="clearCache('PY920')" onmouseover="if(!this.disabled){this.style.background='#dc2626';this.style.boxShadow='0 4px 12px rgba(239,68,68,0.3)'}" onmouseout="if(!this.disabled){this.style.background='#ef4444';this.style.boxShadow='none'}">
-      <i class="ti ti-trash" style="font-size:16px"></i> Clear Cache
+    <button class="btn-cache" id="cache-btn-PY920" onclick="askClearCache('PY920')">
+      <i class="ti ti-trash"></i> Clear Cache
     </button>
     
-    <div class="cache-result" id="cache-result-PY920" style="margin-top:12px;min-height:20px"></div>
+    <div class="cache-result" id="cache-result-PY920"></div>
   </div>
 
   <!-- DM920 - Demo Environment -->
-  <div class="cache-card" style="background:var(--bg-2);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;transition:all 0.3s;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
-    <div class="cache-card-header" style="margin-bottom:12px">
-      <div class="cache-card-icon" style="font-size:28px;font-weight:700;color:#22c55e;margin-bottom:8px;letter-spacing:1px">DM920</div>
-      <div class="cache-card-title" style="font-weight:600;margin-bottom:4px;font-size:15px">Demo</div>
-      <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:0">Clear JDBJ & AIS caches</div>
+  <div class="cache-card">
+    <div class="cache-card-header">
+      <div class="cache-card-icon" style="color:#22c55e">DM920</div>
+      <div class="cache-card-title">Demo</div>
+      <div class="cache-card-desc">Clear JDBJ & AIS caches</div>
     </div>
     
-    <button class="btn-cache" id="cache-btn-DM920" style="width:100%;background:#ef4444;color:white;padding:10px;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.3s;font-family:inherit" onclick="clearCache('DM920')" onmouseover="if(!this.disabled){this.style.background='#dc2626';this.style.boxShadow='0 4px 12px rgba(239,68,68,0.3)'}" onmouseout="if(!this.disabled){this.style.background='#ef4444';this.style.boxShadow='none'}">
-      <i class="ti ti-trash" style="font-size:16px"></i> Clear Cache
+    <button class="btn-cache" id="cache-btn-DM920" onclick="askClearCache('DM920')">
+      <i class="ti ti-trash"></i> Clear Cache
     </button>
     
-    <div class="cache-result" id="cache-result-DM920" style="margin-top:12px;min-height:20px"></div>
+    <div class="cache-result" id="cache-result-DM920"></div>
   </div>
 
 </div>
 
 <!-- Information section -->
-<div style="background:var(--bg-2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:16px">
-  <div style="font-size:13px;color:var(--text-2);font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px">
+<div style="background:var(--bg-secondary);border:0.5px solid var(--border);border-radius:var(--radius-md);padding:14px;margin-bottom:16px">
+  <div style="font-size:13px;color:var(--text);font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px">
     <i class="ti ti-info-circle" style="color:var(--blue);font-size:18px"></i>
     About Cache Clearing
   </div>
@@ -72,20 +72,9 @@
 </div>
 
 <!-- Warning section -->
-<div style="font-size:12px;color:var(--text-3);padding:12px;background:var(--bg-2);border-radius:6px;border-left:4px solid var(--amber);display:flex;gap:8px">
+<div style="font-size:12px;color:var(--text-3);padding:12px;background:var(--bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--amber);display:flex;gap:8px">
   <i class="ti ti-alert-circle" style="color:var(--amber);font-size:18px;flex-shrink:0;margin-top:2px"></i>
   <div>
-    <strong style="color:var(--text-1)">⚠️ Important:</strong> Clearing cache will temporarily affect all JDE instances in the selected environment. This operation clears both database caches (JDBJ) and data caches (AIS) across all configured instances. Use with caution during production hours.
+    <strong style="color:var(--text)">⚠️ Important:</strong> Clearing cache will temporarily affect all JDE instances in the selected environment. This operation clears both database caches and AIS data caches. Plan accordingly and notify users if needed.
   </div>
 </div>
-
-<!-- Load cache functions after tab is rendered -->
-<script>
-if (typeof clearCache === 'undefined') {
-  document.addEventListener('DOMContentLoaded', function() {
-    var script = document.createElement('script');
-    script.src = '/static/js/cache-functions.js';
-    document.head.appendChild(script);
-  });
-}
-</script>
